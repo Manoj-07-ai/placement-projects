@@ -1,0 +1,397 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.title{
+    color:white;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+.robot {
+    margin: 0 auto;
+    background-color:greenyellow;
+    width: 500px;
+}
+.heading{
+    margin-left: 550px;
+    margin-top: 30px;
+}
+
+.head{
+    margin: 0 auto;
+    margin-top: 30px;
+    width:150px;
+    height:160px;
+    background-color:deepskyblue;
+    border-radius: 40% 40% 10%  10%;
+}
+.eye{
+    display: flex;
+    justify-content: space-around;
+
+}
+.left_eye{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 45%;
+}
+.right_eye{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 45%;
+}
+.middle_body{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 7px;
+    width:200px;
+    height:200px;
+    
+
+}
+.middle{
+
+    width:185px;
+    height:200px;
+    background-color: deepskyblue;
+    border-radius: 10px ;
+
+}
+
+.left_hand {
+    width:30px;
+    height:140px;
+    margin-top: 30px;
+    border-radius: 30px;
+    margin-right: 5px;
+    background-color: deepskyblue;
+
+
+}
+.right_hand{
+    width:30px;
+    height:140px;
+    margin-top: 30px;
+    border-radius: 30px;
+    margin-left: 5px;
+    background-color: deepskyblue;
+
+}
+.lower_body {
+    display: flex;
+    margin: 0 auto;
+    width:190px;
+    height:180px;
+    justify-content: space-around;
+
+}
+
+
+.left_leg {
+
+    width:25px;
+    height:160px;
+    margin-top: 0px;
+    border-radius: 30px;
+    margin-left: 5px;
+    background-color: deepskyblue;
+}
+.right_leg {
+    width:25px;
+    height:160px;
+    margin-top: 0px;
+    border-radius: 30px;
+    margin-left: 5px;
+    background-color: deepskyblue;
+
+}
+.robot:hover .head,
+.robot:hover .middle,
+.robot:hover .left_hand,
+.robot:hover .right_hand,
+.robot:hover .left_leg,
+.robot:hover .right_leg{
+    background-color: purple;
+}
+.robot:hover .left_eye,
+.robot:hover .right_eye{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px 20px;
+}
+.robot:hover .head{
+    transition: background-color 2s ease-in-out ;
+    animation: Th;
+    animation-iteration-count: infinite;
+    animation-duration: 0.3s;
+}
+@keyframes Th{
+    0%{
+        width: 140px;
+        transform: rotate(0deg);
+    }
+    25%{
+        width: 150px;
+        transform: rotate(5deg);
+
+    }
+    50%{
+        width:160px;
+        transform: rotate(10deg);
+
+    }
+    75%{
+        width:150px;
+        transform: rotate(-5deg);
+
+    }
+    100%{
+        width: 140px;
+        transform: rotate(0deg);
+
+    }
+}
+
+.robot:hover .middle{
+        transition: background-color 2s ease-in-out ;
+        animation: bd;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+    @keyframes bd{
+        0%{
+            height: 140px;
+            transform: rotate(0deg);
+        }
+        25%{
+            height: 140px;
+            transform: rotate(5deg);
+    
+        }
+        50%{
+            height:140px;
+            transform: rotate(10deg);
+    
+        }
+        75%{
+            height:140px;
+            transform: rotate(-5deg);
+    
+        }
+        100%{
+            width: 140px;
+            transform: rotate(0deg);
+    
+        }
+}
+
+.robot:hover .left_hand{
+    transition: background-color 2s ease-in-out ;
+    animation: tp;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transform-origin: top;
+}
+@keyframes tp{
+    0%{
+        height: 140px;
+        transform: rotate(0deg);
+    }
+    25%{
+        height: 150px;
+        transform: rotate(-45deg);
+
+    }
+    50%{
+        height:140px;
+        transform: rotate(-90deg);
+
+    }
+    75%{
+        height:150px;
+        transform: rotate(-45deg);
+
+    }
+    100%{
+        height: 140px;
+        transform: rotate(0deg);
+
+    }
+}
+.robot:hover .right_hand{
+    transition: background-color 2s ease-in-out ;
+    animation: kp;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transform-origin: top;
+}
+@keyframes kp{
+    0%{
+        height: 140px;
+        transform: rotate(0deg);
+    }
+    25%{
+        height: 150px;
+        transform: rotate(-45deg);
+
+    }
+    50%{
+        height:140px;
+        transform: rotate(-90deg);
+
+    }
+    75%{
+        height:150px;
+        transform: rotate(-45deg);
+
+    }
+    100%{
+        height: 140px;
+        transform: rotate(0deg);
+
+    }
+}
+.robot:hover .left_leg{
+    transition: background-color 2s ease-in-out ;
+    animation: lp;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transform-origin: top;
+}
+@keyframes lp{
+    0%{
+        height: 140px;
+        transform: rotate(0deg);
+    }
+    25%{
+        height: 150px;
+        transform: rotate(45deg);
+
+    }
+    50%{
+        height: 140px;
+        transform: rotate(90deg);
+
+    }
+    75%{
+        height:150px;
+        transform: rotate(45deg);
+
+    }
+    100%{
+        height: 140px;
+        transform: rotate(0deg);
+
+    }
+}
+.robot:hover .right_leg{
+    transition: background-color 2s ease-in-out ;
+    animation: mp;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transform-origin: top;
+}
+@keyframes mp{
+    0%{
+        height: 140px;
+        transform: rotate(0deg);
+    }
+    25%{
+        height:150px;
+        transform: rotate(45deg);
+
+    }
+    50%{
+        height:140px;
+        transform: rotate(90deg);
+
+    }
+    75%{
+        height:150px;
+        transform: rotate(45deg);
+
+    }
+    100%{
+        height: 140px;
+        transform: rotate(0deg);
+
+    }
+}
+
+.robot:hover .left_eye{
+    transition: background-color 2s ease-in-out ;
+    animation: es;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transform-origin: top;
+}
+@keyframes es{
+    0%{
+        width: 40px;
+        transform:rotate(360deg);
+    }
+    25%{
+        width:50px;
+        transform: rotate(3650deg);
+
+    }
+    50%{
+        width:40px;
+        transform: rotate(360deg);
+
+    }
+    75%{
+        width:50px;
+        transform: rotate(360deg);
+
+    }
+    100%{
+        width: 40px;
+        transform: rotate(.360deg);
+
+    }
+}
+
+.robot:hover .right_eye{
+    transition: background-color 2s ease-in-out ;
+    animation: es;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transform-origin: top;
+}
+@keyframes es{
+    0%{
+        width: 40px;
+        transform: rotate(-360deg);
+    }
+    25%{
+        width:50px;
+        transform: rotate(-3650deg);
+
+    }
+    50%{
+        width:40px;
+        transform: rotate(-360deg);
+
+    }
+    75%{
+        width:50px;
+        transform: rotate(-360deg);
+
+    }
+    100%{
+        width: 40px;
+        transform: rotate(-360deg);
+
+    }
+}
